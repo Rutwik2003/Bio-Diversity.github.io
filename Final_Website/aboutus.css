@@ -1,0 +1,446 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax1 {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* image */
+
+
+.image {
+
+
+    position: relative;
+    background: #330000;
+    padding: 100px;
+}
+
+
+/* card */
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+/* the important bits */
+li {
+    perspective: 400px;
+}
+
+.info {
+    transform: rotate3d(1, 0, 0, 90deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    pointer-events: none;
+    background-color: #0d5c7e;
+    opacity: 0.9;
+    /* Chage Color here For The Info Hover Stuff */
+}
+
+.in-top .info {
+    transform-origin: 50% 0%;
+    -webkit-animation: in-top 300ms ease 0ms 1 forwards;
+    animation: in-top 300ms ease 0ms 1 forwards;
+}
+
+.in-right .info {
+    transform-origin: 100% 0%;
+    -webkit-animation: in-right 300ms ease 0ms 1 forwards;
+    animation: in-right 300ms ease 0ms 1 forwards;
+}
+
+.in-bottom .info {
+    transform-origin: 50% 100%;
+    -webkit-animation: in-bottom 300ms ease 0ms 1 forwards;
+    animation: in-bottom 300ms ease 0ms 1 forwards;
+}
+
+.in-left .info {
+    transform-origin: 0% 0%;
+    -webkit-animation: in-left 300ms ease 0ms 1 forwards;
+    animation: in-left 300ms ease 0ms 1 forwards;
+}
+
+.out-top .info {
+    transform-origin: 50% 0%;
+    -webkit-animation: out-top 300ms ease 0ms 1 forwards;
+    animation: out-top 300ms ease 0ms 1 forwards;
+}
+
+.out-right .info {
+    transform-origin: 100% 50%;
+    -webkit-animation: out-right 300ms ease 0ms 1 forwards;
+    animation: out-right 300ms ease 0ms 1 forwards;
+}
+
+.out-bottom .info {
+    transform-origin: 50% 100%;
+    -webkit-animation: out-bottom 300ms ease 0ms 1 forwards;
+    animation: out-bottom 300ms ease 0ms 1 forwards;
+}
+
+.out-left .info {
+    transform-origin: 0% 0%;
+    -webkit-animation: out-left 300ms ease 0ms 1 forwards;
+    animation: out-left 300ms ease 0ms 1 forwards;
+}
+
+@-webkit-keyframes in-top {
+    from {
+        transform: rotate3d(-1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-top {
+    from {
+        transform: rotate3d(-1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes in-right {
+    from {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-right {
+    from {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes in-bottom {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-bottom {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes in-left {
+    from {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-left {
+    from {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes out-top {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(-1, 0, 0, 104deg);
+    }
+}
+
+@keyframes out-top {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(-1, 0, 0, 104deg);
+    }
+}
+
+@-webkit-keyframes out-right {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, -1, 0, 104deg);
+    }
+}
+
+@keyframes out-right {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, -1, 0, 104deg);
+    }
+}
+
+@-webkit-keyframes out-bottom {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, 0, 0, 104deg);
+    }
+}
+
+@keyframes out-bottom {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, 0, 0, 104deg);
+    }
+}
+
+@-webkit-keyframes out-left {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 104deg);
+    }
+}
+
+@keyframes out-left {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 104deg);
+    }
+}
+
+*/
+
+/* you can ignore this ones */
+ul {
+    padding: 0;
+    margin: 0 0 50px;
+}
+
+ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+    padding: 0;
+    list-style: none;
+}
+
+li a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+li h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #EFEAD8;
+    cursor: pointer;
+}
+
+li p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #EFEAD8;
+}
+
+li .normal {
+    width: 100%;
+    height: 100%;
+    background-color: #EFEAD8;
+    color: rgba(51, 153, 255, 0.6);
+    box-shadow: inset 0 2px 20px #EFEAD8;
+    text-align: center;
+    font-size: 50px;
+    line-height: 200px;
+}
+
+/* change width here. */
+li .normal svg {
+    pointer-events: none;
+    width: 200px;
+}
+
+li .normal svg path {
+    fill: #14ee2e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 auto 5px;
+    text-align: center;
+}
+
+h3 {
+    color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li h3:hover {
+    color: #19cf2e;
+}
+
+.sky {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 50px 0 25px;
+    color: #fff;
+}
+
+header p {
+    margin: 0;
+    color: #fff;
+}
+
+
+.images {
+    background-color: #51A696;
+}

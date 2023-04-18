@@ -1,0 +1,617 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+  font-size: 2em;
+  color: #359381;
+  pointer-events: none;
+  margin-right: 450px;
+  
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background: #359381;
+    color: #fff;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2) ;
+}
+
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* You can change the styles if you want. Below this are styles for images,h3. */
+/* Yeah i thought of making an image class. But my plan originally was to have every image property different. I soon realized
+that it's too much work and did'nt even changed the id names. Hence so many img id's. Remove it if you want. */
+#img0,#img1,#img2,#img3,#img4,#img5,#img6, #img7{
+  position: relative;
+  margin-bottom: 5px;
+  width: 35%;
+  margin-left: 32.5%;
+  margin-top: 15px;
+  box-shadow: 6px 6px 12px -3px rgba(0,0,0,0.58);
+}
+h3{
+  font-size: 1.8em;
+  color: #fff;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+.imgsub{
+  margin-left: 15px;
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  color: #90ecac;
+  margin-left: 43%;
+}
+/* Enable this if you want subtitles for images. [optional] */
+
+.points{
+  margin-left: 15px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* image */
+
+
+.image{
+  
+
+    position: relative;
+    background: #330000;
+    padding: 100px;
+}
+#content0{
+  background-image: linear-gradient(#042940,#005C53);
+}
+#content0 p{
+  font-size: 1.4em;
+  color: #04D939;
+  font-weight: 300;
+  word-spacing: 5px;
+}
+#content0 h2{
+  font-size: 3em;
+  color: #DAFDBA;
+  margin-bottom: 10px;
+}
+.pointhead{
+ font-weight: bold; 
+ color: #D6D58E
+}
+#content0 h3{
+  color: #DAFDBA;
+}
+/*extra input*/
+.content1{
+  
+  position: relative;
+  background: #005C53;
+  padding: 100px;
+}
+
+.content1 h2{
+  font-size: 3em;
+  color:#DBF227;
+  margin-bottom: 10px;
+}
+
+.content1 p{
+  font-size: 1.5em;
+  color: #D6D58E;
+  font-weight: 300;
+  word-spacing: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.lists,#types {
+  font-size: 1.5em;
+  color:#D6D58E ;
+  font-weight: 300;
+  
+}
+.lists li{
+  list-style: decimal;
+}
+
+.content2{
+
+position: relative;
+background-image: linear-gradient(#005C53,#9FC131);
+padding: 100px;
+}
+
+.content2 h2{
+font-size: 3em;
+color: #D6D58E;
+margin-bottom: 10px;
+}
+
+.content2 p{
+font-size: 1.4em;
+color: #F2E7DC;
+font-weight: 300;
+}
+
+
+.content3{
+
+position: relative;
+background-image: linear-gradient(#9FC131,#005C53);
+padding: 100px;
+}
+
+.content3 h2{
+font-size: 3em;
+color: #0D0D0D;
+margin-bottom: 10px;
+}
+
+.content3 p{
+font-size: 1.4em;
+color: #042940;
+font-weight: 300;
+}
+
+
+.content4{
+
+position: relative;
+background-image: linear-gradient(#005C53,#042940);
+padding: 100px;
+}
+
+.content4 h2{
+font-size: 3em;
+color:#9FC131;
+margin-bottom: 10px;
+}
+
+.content4 p{
+font-size: 1.4em;
+color: #D6D58E;
+font-weight: 300;
+}
+
+
+.content5{
+
+position: relative;
+background-image:linear-gradient(#042940,#D6D58E) ;
+padding: 100px;
+}
+
+.content5 h2{
+font-size: 3em;
+color: #DBF227;
+margin-bottom: 10px;
+}
+
+.content5 p{
+font-size: 1.4em;
+color: #DBF227;
+font-weight: 300;
+word-spacing: 5px;
+}
+.content6{
+
+position: relative;
+background: #ffcf20;
+padding: 100px;
+}
+
+.content6 h2{
+font-size: 3em;
+color: #fff;
+margin-bottom: 10px;
+}
+
+.content6 p{
+font-size: 1em;
+color: #fff;
+font-weight: 300;
+}
+
+/* card */
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+/* the important bits */
+ li {
+  perspective: 400px;
+}
+
+.info {
+  transform: rotate3d(1, 0, 0, 90deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  pointer-events: none;
+  background-color: #0d5c7e; /* Chage Color here For The Info Hover Stuff */
+}
+
+.in-top .info {
+  transform-origin: 50% 0%;
+  -webkit-animation: in-top 300ms ease 0ms 1 forwards;
+  animation: in-top 300ms ease 0ms 1 forwards;
+}
+
+.in-right .info {
+  transform-origin: 100% 0%;
+  -webkit-animation: in-right 300ms ease 0ms 1 forwards;
+  animation: in-right 300ms ease 0ms 1 forwards;
+}
+
+.in-bottom .info {
+  transform-origin: 50% 100%;
+  -webkit-animation: in-bottom 300ms ease 0ms 1 forwards;
+  animation: in-bottom 300ms ease 0ms 1 forwards;
+}
+
+.in-left .info {
+  transform-origin: 0% 0%;
+  -webkit-animation: in-left 300ms ease 0ms 1 forwards;
+  animation: in-left 300ms ease 0ms 1 forwards;
+}
+
+.out-top .info {
+  transform-origin: 50% 0%;
+  -webkit-animation: out-top 300ms ease 0ms 1 forwards;
+  animation: out-top 300ms ease 0ms 1 forwards;
+}
+
+.out-right .info {
+  transform-origin: 100% 50%;
+  -webkit-animation: out-right 300ms ease 0ms 1 forwards;
+  animation: out-right 300ms ease 0ms 1 forwards;
+}
+
+.out-bottom .info {
+  transform-origin: 50% 100%;
+  -webkit-animation: out-bottom 300ms ease 0ms 1 forwards;
+  animation: out-bottom 300ms ease 0ms 1 forwards;
+}
+
+.out-left .info {
+  transform-origin: 0% 0%;
+  -webkit-animation: out-left 300ms ease 0ms 1 forwards;
+  animation: out-left 300ms ease 0ms 1 forwards;
+}
+
+@-webkit-keyframes in-top {
+  from {
+    transform: rotate3d(-1, 0, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-top {
+  from {
+    transform: rotate3d(-1, 0, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@-webkit-keyframes in-right {
+  from {
+    transform: rotate3d(0, -1, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-right {
+  from {
+    transform: rotate3d(0, -1, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@-webkit-keyframes in-bottom {
+  from {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-bottom {
+  from {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@-webkit-keyframes in-left {
+  from {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-left {
+  from {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@-webkit-keyframes out-top {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(-1, 0, 0, 104deg);
+  }
+}
+
+@keyframes out-top {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(-1, 0, 0, 104deg);
+  }
+}
+
+@-webkit-keyframes out-right {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(0, -1, 0, 104deg);
+  }
+}
+
+@keyframes out-right {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(0, -1, 0, 104deg);
+  }
+}
+
+@-webkit-keyframes out-bottom {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(1, 0, 0, 104deg);
+  }
+}
+
+@keyframes out-bottom {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(1, 0, 0, 104deg);
+  }
+}
+
+@-webkit-keyframes out-left {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 104deg);
+  }
+}
+
+@keyframes out-left {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 104deg);
+  }
+} */
+
+/* you can ignore this ones */
+ ul {
+  padding: 0;
+  margin: 0 0 50px;
+}
+
+ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+li a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+li h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #EFEAD8;
+  cursor: pointer;
+}
+
+li p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #EFEAD8;
+}
+
+li .normal {
+  width: 100%;
+  height: 100%;
+  background-color: #EFEAD8;
+  color: rgba(51, 153, 255, 0.6);
+  box-shadow: inset 0 2px 20px #EFEAD8;
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+}
+
+li .normal svg {
+  pointer-events: none;
+  width: 50px;
+}
+
+li .normal svg path {
+  fill: #14ee2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+h1 {
+  margin: 0 auto 5px;
+  text-align: center;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li h3:hover {
+  color: #19cf2e;
+}
+
+.sky {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 50px 0 25px;
+  color: #fff;
+}
+
+header p {
+  margin: 0;
+  color: #fff;
+} 
+
+
+.images{
+    background-color: #51A696;
+}
+
+
